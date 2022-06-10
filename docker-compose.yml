@@ -7,14 +7,21 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/DockerFile
+    secrets:
+      - db_username
+      - db_password
     depends_on:
       - db
   db:
     environment:
-      POSTGRES_USER: postgres
+      DB_USERNAME_FILE: /run/secrets/db_username
+      DB_PASSWORD_FILE: /run/secrets/db_password
     image: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    secrets:
+      - db_username
+      - db_password
   web:
     build:
       context: .
@@ -23,3 +30,8 @@ services:
       - app
     ports:
       - 8080:80
+secrets:
+    db_password:
+      file: ./secrets/database_password.txt
+    db_username:
+      file: ./secrets/database_username.txt

@@ -25,4 +25,9 @@ COPY . .
 # RUN bundle exec rake assets:precompile
 
 EXPOSE 3000
+
+COPY ./lib/docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
