@@ -37,7 +37,7 @@ The application will use port 3000, as usual.
 
 The frontend needs to be served by an independent web server, in a port different to the one used by Rails. 
 
-You may launch the frontend server by launching:
+You may launch the frontend server by switching to the `frontend` subdirectory and entering the following:
 
 ```sh
 $npm install
