@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter,
   Route,
-  Routes
+  Routes,
+  HashRouter
 } from "react-router-dom";
-
 
 import Layout from './components/layout';
 import Home from './components/home';
@@ -14,7 +13,8 @@ import TicketTypes from './components/ticket_types';
 
 function App() {
   return (
-    <BrowserRouter>
+    // Use hash routing instead of browser routing
+    <HashRouter>
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
             <Route exact path="/ticket_types" element={<TicketTypes />} />
           </Routes>
         </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
