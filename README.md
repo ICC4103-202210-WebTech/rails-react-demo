@@ -15,8 +15,8 @@ The backend application is based on Lab Assignment 6, in which you had to implem
 
 In the root of the repository, you will see the usual structure of a Rails project, with some additions:
 
-* The frontend subdirectory contains the source code of the react-based frontend.
- * Therein, you will find two important subdirectories: public and src.
+* The `frontend` subdirectory contains the source code of the react-based frontend.
+ * Therein, you will find two important subdirectories: `public` and `src`.
  * The public directory contains the assets that are downloaded by the web browser:
  * bundled `css` (`app.css`), bundled (i.e., by esbuild) javascript (`app.js`), the `index.html` page and other assets, such as icons and images.
  * The `src` directory contains the source files of the react-based frontend, including `index.js` (entrypoint of the React application).
