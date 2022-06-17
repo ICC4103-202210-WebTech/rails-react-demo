@@ -48,7 +48,7 @@ The frontend server will listen for connections in port 8000. Note that the serv
 
 In a production environment, the frontend should be served by a dedicated web server, such as nginx or Apache.
 
-Only the files in `frontend/public` are required in a production web server. 
+With regard to the frontend, only the files in `frontend/public` are required in a production web server. 
 
 ## Useful links
 
