@@ -52,8 +52,6 @@ With regard to the frontend, only the files in `frontend/public` are required in
 
 ## Useful links
 
-The following links to Rails Guides will provide you useful information for completing your assignment:
-
 * [Using Rails for API-only applications](https://edgeguides.rubyonrails.org/api_app.html)
 * [React Documentation](https://reactjs.org/docs/getting-started.html)
 * [Creating a React project with esbuild](https://devtails.xyz/how-to-replace-webpack-in-create-react-app-with-esbuild)
