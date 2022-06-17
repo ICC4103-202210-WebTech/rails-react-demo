@@ -44,7 +44,7 @@ $npm install
 $npm start
 ```
 
-in the `frontend` directory. The server will listen for connections in port 8000. Note that the server is solely intended for development, and is provided by esbuild. Every time you modify JavaScript components in frontend code, esbuild will automatically rebundle your code and output `frontend/public/js/app.js`
+The frontend server will listen for connections in port 8000. Note that the server is solely intended for development, and is provided by esbuild. Every time you modify JavaScript components in frontend code, esbuild will automatically rebundle your code and output `frontend/public/js/app.js`
 
 In a production environment, the frontend should be served by a dedicated web server, such as nginx or Apache.
 
