@@ -4,7 +4,7 @@
 
 In this demo you will see how a (basic) React-based frontend works and consumes API endpoints provided by a Rails application that has been generated in API-only mode.
 
-The backend application is based on Lab Assignment 6, in which you had to implement an API for accessing events and ticket types in the TicketShop. The React frontend is simple; it just contains index views for events and ticket types, but will be useful for you to understand how a single page application run in the browser interacts with a server backend.
+The backend application is based on Lab Assignment 6, in which you had to implement an API for accessing events and ticket types in the TicketShop. The React frontend is simple; it just contains index views for events and ticket types, but will be useful for you to understand how a single page application runs in the browser interacts with a server backend.
 
 ## Pre-requisites
 
